@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu planta ideal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <header class="header">
+    <span class="header-icon">🌿</span>
+    <h1>Tu planta ideal</h1>
+    <p>Encuentra la planta perfecta para tu hogar</p>
+  </header>
+
+  <!-- Paso 1: Zona -->
+  <div class="step">
+    <p class="step-label">¿En qué zona vives?</p>
+    <div class="btn-group">
+      <button class="opt-btn" data-grupo="zona" data-val="norte">Norte</button>
+      <button class="opt-btn" data-grupo="zona" data-val="sur">Sur</button>
+    </div>
+  </div>
+
+  <!-- Paso 2: Luz -->
+  <div class="step">
+    <p class="step-label">¿Cuánta luz recibe tu espacio?</p>
+    <div class="btn-group">
+      <button class="opt-btn" data-grupo="luz" data-val="alta">Alta</button>
+      <button class="opt-btn" data-grupo="luz" data-val="media">Media</button>
+      <button class="opt-btn" data-grupo="luz" data-val="baja">Baja</button>
+    </div>
+    <p class="hint">
+      Alta: ventana con sol directo &nbsp;·&nbsp;
+      Media: luz indirecta &nbsp;·&nbsp;
+      Baja: sin ventanas o pasillos
+    </p>
+  </div>
+
+  <!-- Botón principal -->
+  <button class="btn-cta" id="btn-recomendar" disabled>
+    Ver plantas recomendadas
+  </button>
+
+  <!-- Resultados -->
+  <div id="resultado"></div>
+
+</div>
+
+<!-- Módulos ES: rutas correctas relativas a /js/ -->
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
